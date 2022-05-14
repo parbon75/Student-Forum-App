@@ -1,6 +1,6 @@
-package com.parbon.studentforum;
+package com.parbon.studentforum.adapters;
 
-import android.media.Image;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.core.Context;
+import com.parbon.studentforum.ChatActivity;
+import com.parbon.studentforum.models.ModelUser;
+import com.parbon.studentforum.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -41,6 +43,7 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
         //get data
+        String hisUID = userList.get(position).getUid();
         String userImage = userList.get(position).getImage();
         String userName = userList.get(position).getName();
         String userEmail = userList.get(position).getEmail();
@@ -57,12 +60,10 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyHolder> {
 
         }
         //handle item click
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, ""+userEmail, Toast.LENGTH_SHORT).show();
-
-            }
+        holder.itemView.setOnClickListener((v) -> {
+            Intent intent = new Intent(context, ChatActivity.class);
+            intent.putExtra("hisUid", hisUID);
+            context.startActivity(intent);
         });
     }
 

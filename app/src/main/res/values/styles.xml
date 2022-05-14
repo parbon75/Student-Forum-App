@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- THeme without action bar-->
+    <style name="AppThemeNo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--Customize your theme here-->
+
+    </style>
+
+    <style name="AppTheme.AppBatOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

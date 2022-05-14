@@ -1,4 +1,4 @@
-package com.parbon.studentforum;
+package com.parbon.studentforum.models;
 
 import android.view.Display;
 

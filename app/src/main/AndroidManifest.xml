@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentForum">
         <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemeNo"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity

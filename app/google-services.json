@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1015319979094",
+    "firebase_url": "https://student-forum-b6dce-default-rtdb.firebaseio.com",
     "project_id": "student-forum-b6dce",
     "storage_bucket": "student-forum-b6dce.appspot.com"
   },

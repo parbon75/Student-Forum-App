@@ -42,7 +42,15 @@ dependencies {
     // For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.4'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:21.0.0-rc1'
+
+    implementation 'com.google.firebase:firebase-messaging:23.0.4'
+    //implementation 'com.squareup.retrofit2:converter-gson:lasest.version'
+
 }

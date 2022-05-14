@@ -1,5 +1,6 @@
 package com.parbon.studentforum;
 
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,6 +42,8 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
         //get data
+
+        String hisUID = userList.get(position).getUid();
         String userImage = userList.get(position).getImage();
         String userName = userList.get(position).getName();
         String userEmail = userList.get(position).getEmail();
@@ -60,7 +63,10 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.MyHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, ""+userEmail, Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(context, ""+userEmail, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("hisUID",hisUID);
+                context.startActivity(intent);
 
             }
         });

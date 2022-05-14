@@ -13,12 +13,20 @@
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/layout/fragment_users.xml" value="0.21693840579710144" />
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/menu/menu_main.xml" value="0.34479166666666666" />
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/menu/menu_nav.xml" value="0.23958333333333334" />
-        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/fragment_users.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/row_users.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/drawable-anydpi/ic_default.xml" value="0.192" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/drawable-anydpi/ic_default_img.xml" value="0.1025" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/drawable/bg_receiver.xml" value="0.192" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/drawable/bg_sender.xml" value="0.192" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/activity_dashboard.xml" value="0.215625" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/fragment_chat_list.xml" value="0.1" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_chat_left.xml" value="0.18" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_chat_right.xml" value="0.33" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/menu/menu_nav.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

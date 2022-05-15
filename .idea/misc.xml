@@ -13,10 +13,14 @@
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/layout/fragment_users.xml" value="0.21693840579710144" />
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/menu/menu_main.xml" value="0.34479166666666666" />
         <entry key="..\:/Study Materials/3-2/StudentForum/app/src/main/res/menu/menu_nav.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/drawable/bg_receiver.xml" value="0.24" />
+        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/drawable/bg_sender.xml" value="0.24" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/activity_chat.xml" value="0.22" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/activity_dashboard.xml" value="0.278125" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/fragment_chat_list.xml" value="0.13471241170534815" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/fragment_users.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/row_chat_left.xml" value="0.2296875" />
+        <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/row_chat_right.xml" value="0.22864583333333333" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/layout/row_users.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/Windows/AndroidStudioProjects/Student-Forum-App/app/src/main/res/menu/menu_nav.xml" value="0.2727272727272727" />
       </map>

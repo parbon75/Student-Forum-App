@@ -1,5 +1,6 @@
 package com.parbon.studentforum;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -31,6 +33,7 @@ import java.util.List;
  */
 public class UsersFragment extends Fragment {
 
+    FirebaseAuth firebaseAuth;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -120,5 +123,17 @@ public class UsersFragment extends Fragment {
 
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.action_logout){
+            firebaseAuth.signOut();
+        }
+        if(id==R.id.action_add_post){
+            startActivity(new Intent(getActivity(),AddPostActivity.class));
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

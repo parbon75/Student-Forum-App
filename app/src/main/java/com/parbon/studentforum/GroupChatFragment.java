@@ -1,24 +1,19 @@
 package com.parbon.studentforum;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.firebase.auth.FirebaseAuth;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
+ * Use the {@link GroupChatFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class GroupChatFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,9 +24,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    FirebaseAuth firebaseAuth;
-
-    public HomeFragment() {
+    public GroupChatFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +34,11 @@ public class HomeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
+     * @return A new instance of fragment GroupChatFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
+    public static GroupChatFragment newInstance(String param1, String param2) {
+        GroupChatFragment fragment = new GroupChatFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,19 +59,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.action_logout){
-            firebaseAuth.signOut();
-        }
-        if(id==R.id.action_add_post){
-            startActivity(new Intent(getActivity(),AddPostActivity.class));
-        }
-
-        return super.onOptionsItemSelected(item);
+        return inflater.inflate(R.layout.fragment_group_chat, container, false);
     }
 }

@@ -1,11 +1,13 @@
 package com.parbon.studentforum;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -140,5 +142,18 @@ public class ProfileFragment extends Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.action_logout){
+            firebaseAuth.signOut();
+        }
+        if(id==R.id.action_add_post){
+            startActivity(new Intent(getActivity(),AddPostActivity.class));
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

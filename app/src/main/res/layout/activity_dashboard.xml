@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_nav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

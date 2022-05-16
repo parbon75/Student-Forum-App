@@ -7,8 +7,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,6 +26,7 @@ public class DashboardActivity extends AppCompatActivity {
     //TextView mProfileTv;
 
     ActionBar actionBar;
+    BottomNavigationView navigationView;
 
 
     @Override
@@ -42,7 +45,7 @@ public class DashboardActivity extends AppCompatActivity {
         //mProfileTv = findViewById(R.id.profileTv);
 
         //bottom navigation
-        BottomNavigationView navigationView = findViewById(R.id.navigation);
+        navigationView = findViewById(R.id.navigation);
         navigationView.setOnNavigationItemSelectedListener(selectedListener);
 
         //home fragment transaction (default, on star)
@@ -97,10 +100,38 @@ public class DashboardActivity extends AppCompatActivity {
                             ft4.commit();
                             return true;
 
+                        case R.id.nav_more:
+                            showMoreOptions();
+                            return true;
                     }
                     return false;
                 }
             };
+
+    private void showMoreOptions() {
+        PopupMenu popupMenu = new PopupMenu(this, navigationView, Gravity.END);
+        popupMenu.getMenu().add(Menu.NONE,0,0,"Group Chats");
+
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                int id = menuItem.getItemId();
+                if (id==0){
+                    actionBar.setTitle("Group Chats"); //change actionbar title
+                    ChatListFragment fragment5 = new ChatListFragment();
+                    FragmentTransaction ft5 = getSupportFragmentManager().beginTransaction();
+                    ft5.replace(R.id.content, fragment5, "");
+                    ft5.commit();
+                }
+                else if(id==1){
+                    //show other options later
+                }
+
+                return false;
+            }
+        });
+        popupMenu.show();
+    }
 
     private void checkUserStatus(){
         //get current user
@@ -150,6 +181,9 @@ public class DashboardActivity extends AppCompatActivity {
         if(id == R.id.action_logout){
             firebaseAuth.signOut();
             checkUserStatus();
+        }
+        if(id==R.id.action_add_post){
+            startActivity(new Intent(DashboardActivity.this,AddPostActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

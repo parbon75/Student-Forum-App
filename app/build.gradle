@@ -52,5 +52,6 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-messaging:23.0.4'
     //implementation 'com.squareup.retrofit2:converter-gson:lasest.version'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }

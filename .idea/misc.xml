@@ -19,9 +19,12 @@
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/drawable/bg_sender.xml" value="0.192" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/activity_chat.xml" value="0.1" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/activity_dashboard.xml" value="0.215625" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/activity_post_detail.xml" value="0.1" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/fragment_chat_list.xml" value="0.1" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_chat_left.xml" value="0.18" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_chat_right.xml" value="0.33" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_comments.xml" value="0.33" />
+        <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/layout/row_post.xml" value="0.215625" />
         <entry key="..\:/Users/User/Student-Forum-App/app/src/main/res/menu/menu_nav.xml" value="0.25" />
       </map>
     </option>

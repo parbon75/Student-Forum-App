@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/commentsLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:contentPadding="5dp">
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textColor="@color/colorBlack"
+                android:drawableStart="@drawable/ic_chat_black"
+                android:drawablePadding="5dp"
+                android:padding="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/commentsLayout"
+        tools:ignore="InvalidId">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cAvatarIv"
+            android:src="@drawable/ic_default_img"/>
+
+        <EditText
+            android:id="@+id/commentEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_toEndOf="@+id/cAvatarIv"
+            android:layout_toStartOf="@+id/sendBtn"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:hint="Enter Comment........"
+            android:inputType="textCapSentences|textMultiLine"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendBtn"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send"
+            android:background="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

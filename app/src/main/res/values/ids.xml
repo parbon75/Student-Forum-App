@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="action_search" type="id" />
+    <item name="uPictureIv" type="id" />
+    <item name="pImageIv" type="id" />
+    <item name="pTimeTiv" type="id" />
+    <item name="pTitleTv" type="id" />
+    <item name="pDescriptionTv" type="id" />
+    <item name="pLikesTv" type="id" />
+    <item name="moreBtn" type="id" />
+    <item name="likeBtn" type="id" />
+    <item name="profileLayout" type="id" />
+    <item name="shareBtn" type="id" />
+    <item name="uNameTv" type="id" />
+    <item name="pCommentsTv" type="id" />
+    <item name="itemTv" type="id" />
+    <item name="action_add_post" type="id" />
 </resources>
